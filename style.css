@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(322, 100%, 98%);
+    --Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Light-red: hsl(0, 100%, 63%);
+    --White: #fff;
+    --Text-Color: var(--Dark-Cyan);
+    --Button-Text: var(--Dark-Cyan);
+    --Footer-Text: #fff;
+}
+
+body {
+    font-family: Open sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+.top-content {
+    background-color: hsla(322, 100%, 66%, 0.128);
+    background-image: url(./images/bg-hero-desktop.svg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Poppins, sans-serif;
+}
+
+.img {
+
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+}
+
+.img button {
+    border-radius: 20px;
+    width: 10rem;
+    background-color: white;
+    border: none;
+}
+
+.img button a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.main-header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.main button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.image img {
+    width: 750px;
+}
+
+.text {
+    padding: 5rem 3rem 2rem 2rem;
+    flex: 1;
+}
+
+.text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.text button {
+    width: 20rem;
+    border-radius: 25px;
+    background-color: rgb(234, 30, 213);
+    padding: 15px;
+    border: none;
+    color: white;
+}
+
+.card {
+    max-width: 1280px;
+    margin: 3rem auto 0 auto;
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.075);
+    padding: 3.5rem 2.4rem 3rem 2.4rem;
+    color: var(--neutral-grayish-blue);
+    align-items: center;
+    gap: 2.5rem;
+    border-radius: 16px;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.card:last-child {
+    margin-bottom: 10em;
+}
+
+.card img {
+    width: 270px;
+}
+
+footer {
+    background-color: var(--Dark-Cyan);
+    display: flex;
+    color: #fff;
+    align-items: center;
+    width: 100vw;
+    flex: 1;
+}
+
+.footer-container {
+    display: flex;
+    flex: 1;
+    margin-top: 10rem;
+}
+
+.ul {
+    flex-direction: column;
+    display: flex;
+}
+
+.contact-container {
+    display: flex;
+    padding: 20px;
+    flex: 2;
+}
+
+.contact-container img {
+    width: 10rem;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+.Contact {
+    display: flex;
+    height: 1rem;
+}
+
+.Contact:first-child {
+    margin-bottom: 4rem;
+}
+
+.Contact:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.flex img {
+    width: 10px;
+    margin: 0px 5px;
+}
+
+.list-footer {
+    list-style: none;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.list-footer a {
+    text-decoration: none;
+    line-height: 1.6rem;
+    color: #fff;
+}
+
+.list-footer a:hover {
+    text-decoration: underline;
+    color: var(--pink);
+}
+
+.icons-flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    gap: 9rem;
+    margin-top: 10rem;
+}
+
+.icons-container {
+    flex: 1;
+}
+
+.footer-i {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.footer-i svg {
+    border: solid 1px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.footer-i svg:hover {
+    border: solid 1px #ff52c07a;
+}
+
+small {
+    margin-left: 10rem;
+    font-size: 0.8em;
+}
+
+.floating-card-container {
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 10rem;
+}
+
+.floating-card {
+    background-color: hsl(322, 100%, 98%);
+    position: absolute;
+    width: 40rem;
+    height: 15rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.floating-card h2 {
+    margin-bottom: 2rem;
+}
+
+.floating-card button {
+    border-radius: 25px;
+    padding: 5px 2rem;
+    font-size: 1.1em;
+    border: none;
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.floating-card button:hover {
+    background-color: hsla(322, 100%, 66%, 0.812);
+}
+
+@media (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img img {
+        width: 10rem;
+        margin: 1rem 0;
+    }
+
+    .image img {
+        width: 30rem;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .icons-flex {
+        margin: 0;
+        margin-top: 10rem;
+    }
+
+    small {
+        margin: 0;
+    }
+
+    .flex p {
+        font-size: 13px;
+    }
+
+    .contact-container img {
+        margin-left: 4rem;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .main-content {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .text button {
+        margin-bottom: 2rem;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .text {
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 75vh;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vW;
+    }
+
+    .contact-container img {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .flex {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .icons-flex {
+        display: contents;
+        margin-top: 1rem;
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+
+    .footer-i {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .floating-card {
+        width: 90%;
+        height: 15%;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .floating-card h2 {
+        font-size: 16px;
+    }
+
+    .floating-card button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 375px) {
+    .floating-card {
+        width: 60%;
+        height: 20%;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .img button {
+        padding: 0;
+        width: 8rem;
+    }
+
+    .floating-card h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .floating-card button {
+        font-size: 0.9em;
+        padding: 2px 1rem;
+    }
+
+    small {
+        text-align: center;
+        display: flex;
+        width: 250px;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .floating-card {
+        width: 60%;
+        height: 20%;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .top-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .text button {
+        padding: auto;
+        width: 50%;
+    }
+
+    .floating-card h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .floating-card h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .floating-card button {
+        font-size: 0.9em;
+        padding: 1px 1rem;
+    }
+
+    .footer-i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    small {
+        text-align: center;
+        display: flex;
+        width: 250px;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    footer {
+        margin-left: 1rem;
+    }
+}
