@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 * {
-    margin: 1px;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
     font-family: poppins, sans-serif;
@@ -30,7 +30,7 @@ body {
 }
 
 .top-content {
-    background-color: hsla(322, 100%, 66%, 0.128);
+    background-color: hsla(322, 100%, 66%, 0.054);
     background-image: url(./images/bg-hero-desktop.svg);
     display: flex;
     justify-content: center;
@@ -112,9 +112,11 @@ body {
     color: white;
     cursor: pointer;
 }
+
 .text button:hover {
     background-color: rgba(234, 30, 214, 0.69);
 }
+
 .card {
     max-width: 1280px;
     margin: 3rem auto 0 auto;
@@ -143,12 +145,14 @@ footer {
     align-items: center;
     width: 100vw;
     flex: 1;
+    height: 30rem;
 }
 
 .footer-container {
     display: flex;
     flex: 1;
     margin-top: 10rem;
+    width: 100%;
 }
 
 .ul {
@@ -170,27 +174,34 @@ footer {
 .flex {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: auto;
+    flex: 2;
     margin-left: 1rem;
-    flex: 1;
+    justify-content: center;
+
 }
 
 .Contact {
     display: flex;
-    height: 1rem;
+    height: auto;
+    justify-content: center;
+    text-align: start;
+
 }
 
-.Contact:first-child {
+
+.Contact:first-child img {
     margin-bottom: 4rem;
 }
 
 .Contact:nth-child(2) {
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .flex img {
     width: 10px;
-    margin: 0px 5px;
+
 }
 
 .list-footer {
@@ -279,6 +290,15 @@ small {
 
 .floating-card button:hover {
     background-color: hsla(322, 100%, 66%, 0.812);
+}
+
+.footer-list {
+    width: 10rem;
+}
+
+.Contact img {
+    margin: 0;
+    margin-right: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -373,7 +393,7 @@ small {
 
     footer {
         flex-direction: column;
-        height: 75vh;
+        height: auto;
     }
 
     .contact-container {
@@ -392,7 +412,7 @@ small {
 
     .flex {
         margin: 0;
-        width: 100%;
+        width: 80%;
         justify-content: center;
         align-items: center;
         margin-bottom: 2rem;
@@ -413,6 +433,15 @@ small {
     .card {
         flex-direction: column;
         text-align: center;
+    }
+
+    .Contact img {
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    .card:nth-child(2) {
+        flex-direction: column-reverse;
     }
 
 }
@@ -465,6 +494,7 @@ small {
         justify-content: center;
     }
 
+
 }
 
 @media (max-width: 320px) {
@@ -483,7 +513,7 @@ small {
     }
 
     .top-content {
-        display: flex;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
