@@ -25,22 +25,3 @@ Ceci est l'implémentation front-end d'une page de destination (Landing Page) po
 | **Google Fonts** | Utilisation des polices **Poppins** et **Open Sans**. |
 | **Font Awesome** (SVG) | Icônes des réseaux sociaux dans le pied de page. |
 
----
-
-## 🚀 Lancement Local
-
-Pour visualiser le projet dans votre navigateur :
-
-1.  **Cloner ou Télécharger** ce dépôt de code.
-2.  Assurez-vous que les dossiers `images/` et les fichiers `index.html` et `style.css` sont dans le même répertoire.
-3.  Ouvrez le fichier **`index.html`** dans n'importe quel navigateur web.
-
-*(Pour un développement plus fluide, l'utilisation d'une extension comme **Live Server** sur VS Code est recommandée.)*
-
----
-
-## 🖼️ Structure CSS Remarquable
-
-* **Centrage global du contenu :** Le `<body>` est centré pour les mises en page mobiles pour faciliter la gestion du responsive.
-* **`overflow-x: hidden;` sur `body` :** Cette propriété a été utilisée pour désactiver le défilement horizontal et éviter les barres de défilement indésirables causées par un contenu qui dépasse le bord de l'écran.
-* **Positionnement du CTA final :** La carte finale est gérée avec un positionnement **`position: absolute;`** à l'intérieur d'un conteneur Flex pour créer un effet visuel flottant juste avant le pied de page.

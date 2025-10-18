@@ -53,6 +53,10 @@ body {
     border: none;
 }
 
+.img button:hover {
+    background-color: #ffffffd3;
+}
+
 .img button a {
     text-decoration: none;
     color: black;
@@ -76,6 +80,8 @@ body {
     color: white;
     border: none;
 }
+
+
 
 .image img {
     width: 750px;
@@ -104,8 +110,11 @@ body {
     padding: 15px;
     border: none;
     color: white;
+    cursor: pointer;
 }
-
+.text button:hover {
+    background-color: rgba(234, 30, 214, 0.69);
+}
 .card {
     max-width: 1280px;
     margin: 3rem auto 0 auto;
