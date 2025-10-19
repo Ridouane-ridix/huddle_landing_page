@@ -103,8 +103,10 @@ body {
 }
 
 .text p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
+    font-family: Open Sans;
+    font-weight: 400;
 }
 
 .text button {
@@ -144,8 +146,10 @@ body {
 }
 
 .card p {
-    font-weight: 100;
-    color: rgba(80, 76, 76, 0.805);
+    font-weight: 400;
+    font-family: Open Sans;
+    margin-top: 1rem;
+    color:#757575e4;
 }
 
 footer {
@@ -166,10 +170,6 @@ footer {
     width: 100%;
 }
 
-.ul {
-    flex-direction: column;
-    display: flex;
-}
 
 .contact-container {
     display: flex;
@@ -179,7 +179,7 @@ footer {
 }
 
 .contact-container img {
-    width: 15rem;
+    width: 12rem;
 
 }
 
@@ -204,7 +204,6 @@ footer {
     text-align: start;
 
 }
-
 
 .Contact:first-child img {
     margin-bottom: 4rem;
@@ -306,11 +305,67 @@ small {
 }
 
 .footer-list {
-    width: 20rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
+    width: 25rem;
 }
 
-
+@media (max-width: 2560px){
+    .top-content{
+        width: 78%;
+    }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    header{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+    .main-content{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .main-header{
+        width: 100%;
+    }
+    .img{
+        width: 90%;
+        margin-right: 0rem;
+    }
+    .text{
+    max-width: 40em;
+    }
+    .image img{
+        width: 48rem;
+    }
+    footer{
+        width: 70%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1440px){
+    footer{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    .top-content{
+        width: 100%;
+    }
+    .image img{
+        width: 40rem;
+        margin-top: 4rem;
+    }
+}
 @media (max-width: 1024px) {
     body {
         display: flex;
@@ -385,6 +440,9 @@ small {
 }
 
 @media (max-width: 769px) {
+    .top-content{
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
     .main-content {
         flex-direction: column;
         display: flex;
@@ -536,13 +594,18 @@ small {
     img.logo {
         margin-right: 10rem;
     }
-
+.card{
+    width: 23rem;
+}
     .card img {
         width: 300px;
     }
 }
 
 @media (max-width: 375px) {
+.card{
+   width: 20rem;
+}
     .floating-card {
         width: 80%;
         height: 20%;
@@ -576,29 +639,33 @@ small {
         font-size: 12px;
         justify-content: center;
     }
+      .top-content {
+        min-width: 106vw;
+        justify-content: center;
+        align-items: center;
 
+    }
+    .main-header{
+        margin-left: 1rem;
+    }
 
 }
 
 @media (max-width: 320px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     .floating-card {
         width: 60%;
         height: 20%;
         margin-top: 5rem;
         padding: 0;
+        margin-left: 2rem;
     }
 
     .top-content {
-        width: 100%;
+        min-width: 100%;
         justify-content: center;
         align-items: center;
+        margin-left: 3rem;
     }
 
     .text h1 {
@@ -626,6 +693,7 @@ small {
         padding: 1px 1rem;
     }
 
+    
     .footer-i {
         display: flex;
         justify-content: center;
@@ -646,7 +714,8 @@ small {
     }
 
     .card {
-        width: 90%;
+        width: 20rem;
+        margin-left: 3rem;
     }
 
     img.logo {
@@ -654,7 +723,7 @@ small {
     }
 
     footer {
-
+margin-left: 3rem;
         width: 100%;
     }
 }
